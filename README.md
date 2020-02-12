@@ -31,6 +31,18 @@ spark流计算项目 - 基于Kafka、SparkStreaming、Hbase、Servlet、Highchar
 
 架构图：略
 
+## 框架
+- jdk1.8.0_40
+- scala-2.11.12
+- hadoop-2.7.5
+- spark-2.4.4-bin-hadoop2.7
+- kafka_2.11-2.2.0
+- hbase-1.3.6
+- zookeeper-3.4.9
+- highcharts4.x
 
 ## 其它
 &emsp;&emsp;关于hbase的知识以及本项目中关于hbase的程序，可以查看本人的一篇博客文章[HBase从介绍到Java客户端开发](https://blog.csdn.net/whisky_12/article/details/104114154)
+
+
+&emsp;&emsp;在jar依赖上遇到了没有解决的问题，加之pom.xml文件一修改，就要fail在downloading maven-metadata-...上。所以最后决定spark和kafka依赖pom.xml；hadoop和hbase则是自己添加依赖到lib目录下，依赖来源是$HBASE_HOME/lib/，除了明显无关的（带test、yarn、mapreduce字样），其它的一起拖放到了lib下
