@@ -1,5 +1,5 @@
-*.js linguist-language=spark
+*.js linguist-language=scala
 
-*.css linguist-language=spark
+*.css linguist-language=scala
 
-*.html linguist-language=spark
+*.html linguist-language=scala
